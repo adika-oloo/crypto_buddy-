@@ -41,25 +41,25 @@ while True:
     user_query = input("You: ").lower()
 
     if user_query in ["exit", "quit", "bye"]:
-        print("CryptoBuddy: Goodbye! 🚀 Remember to do your own research!")
+        print("CryptoBuddy: Goodbye!  Remember to do your own research!")
         break
 
     elif "sustainable" in user_query or "eco" in user_query or "green" in user_query:
         best = get_most_sustainable()
-        print(f"CryptoBuddy: Go for {best}! 🌱 It’s eco-friendly with a strong sustainability score of {crypto_db[best]['sustainability_score']}/10.")
+        print(f"CryptoBuddy: Go for {best}!  It’s eco-friendly with a strong sustainability score of {crypto_db[best]['sustainability_score']}/10.")
 
     elif "trending" in user_query or "growing" in user_query or "profit" in user_query or "long-term" in user_query:
         best = get_best_for_growth()
         if best != "No strong growth candidates right now.":
-            print(f"CryptoBuddy: {best} is trending up 📈 and has a high market cap! Looks promising for long-term growth.")
+            print(f"CryptoBuddy: {best} is trending up  and has a high market cap! Looks promising for long-term growth.")
         else:
             print("CryptoBuddy: Hmm, I don’t see any ideal growth options right now. Let’s check again later.")
 
     elif "cardano" in user_query:
-        print("CryptoBuddy: Cardano (ADA) is known for sustainability and energy efficiency. 🔋")
+        print("CryptoBuddy: Cardano (ADA) is known for sustainability and energy efficiency. ")
 
     elif "bitcoin" in user_query:
-        print("CryptoBuddy: Bitcoin is the most popular but uses a lot of energy ⚡ and has a lower sustainability score.")
+        print("CryptoBuddy: Bitcoin is the most popular but uses a lot of energy  and has a lower sustainability score.")
 
     elif "ethereum" in user_query:
         print("CryptoBuddy: Ethereum is transitioning to more eco-friendly operations. It’s stable with high market cap.")
